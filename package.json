@@ -1,0 +1,24 @@
+{
+  "name": "netlifyblog",
+  "version": "1.0.0",
+  "description": "Posting AI Research tasks",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/playerpianoman/netlifyblog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/playerpianoman/netlifyblog/issues"
+  },
+  "homepage": "https://github.com/playerpianoman/netlifyblog#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2"
+  }
+}

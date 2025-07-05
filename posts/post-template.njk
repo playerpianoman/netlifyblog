@@ -1,0 +1,21 @@
+---
+pagination:
+  data: allPosts
+  size: 1
+  alias: post
+layout: layout.njk
+permalink: "/posts/{{ post.id }}/"
+eleventyComputed:
+  title: "{{ post.title }}"
+---
+
+<article>
+    <p>Published on <time>{{ post.date }}</time> by {{ post.author }}</p>
+    {% if post.summary %}
+        <p><em>{{ post.summary }}</em></p>
+    {% endif %}
+    <div>{{ post.body | safe }}</div>
+    {% if post.link %}
+        <p><a href="{{ post.link }}">Read More</a></p>
+    {% endif %}
+</article> 
