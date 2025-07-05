@@ -1,0 +1,15 @@
+---
+layout: layout.njk
+title: Journal
+permalink: /journal/
+---
+
+<ul>
+    {% for post in posts.journal %}
+        <li>
+            <a href="/posts/{{ post.id }}/">
+                {{ post.title }}
+            </a> - <time>{{ post.date }}</time>
+        </li>
+    {% endfor %}
+</ul> 

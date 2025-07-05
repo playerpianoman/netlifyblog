@@ -1,0 +1,15 @@
+---
+layout: layout.njk
+title: Brainstorm
+permalink: /brainstorm/
+---
+
+<ul>
+    {% for post in posts.brainstorm %}
+        <li>
+            <a href="/posts/{{ post.id }}/">
+                {{ post.title }}
+            </a> - <time>{{ post.date }}</time>
+        </li>
+    {% endfor %}
+</ul> 

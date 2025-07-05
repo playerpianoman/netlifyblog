@@ -1,0 +1,15 @@
+---
+layout: layout.njk
+title: AI Research
+permalink: /ai-research/
+---
+
+<ul>
+    {% for post in posts.aiResearch %}
+        <li>
+            <a href="/posts/{{ post.id }}/">
+                {{ post.title }}
+            </a> - <time>{{ post.date }}</time>
+        </li>
+    {% endfor %}
+</ul> 
