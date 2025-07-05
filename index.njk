@@ -13,6 +13,8 @@ title: Home
             <a href="/brainstorm/">Brainstorm</a> ({{ items | length }} posts)
         {% elif category == "journal" %}
             <a href="/journal/">Journal</a> ({{ items | length }} posts)
+        {% elif category == "travel" %}
+            <a href="/travel/">Travel</a> ({{ items | length }} posts)
         {% else %}
             <a href="/{{ category | lower }}/">{{ category }}</a> ({{ items | length }} posts)
         {% endif %}
